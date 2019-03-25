@@ -1,0 +1,15 @@
+{
+  "name": "typescript-course-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(\u0016\u0016\u0016https://github.com/leonardoigor/TypeScript-Course.git)"
+  },
+  "author": "Igor Leonardo <igor_mendonca@outlook.com>",
+  "license": "ISC"
+}
