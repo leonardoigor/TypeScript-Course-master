@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+
+    <script>
+        const article =
+        {
+            title: 'Aprendendo Template Strings',
+            intro: 'Uma breve explicação de como se utilizar template strings do ES¨em seu códico hoje!',
+            body:'Nanatsu no Taizai 2 episodio 20 - A morte de MELIODAS (review)',
+            tags:['es6','js','template-literal'],
+            altor:'igor Leonardo'
+        }
+function renderAuthor(name)
+{
+ return (name)? name:'unknow'
+}
+        const markup = `${article.body}
+        <article>
+            <header>
+                <h1>${article.title}</h1>    
+            </header>
+            <section>
+                <p>${article.intro}</p>    
+            </section>
+            <footer>
+            <ul>
+                ${article.tags.map((tag) =>`<li>${tag}</li>`).join('')}
+            </ul>    
+            ${renderAuthor(article.altor)}
+            </footer>
+        </article
+
+        `;
+
+        document.body.innerHTML=markup;
+    </script>
+</body>
+
+</html>
