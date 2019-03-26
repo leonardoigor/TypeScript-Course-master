@@ -1,0 +1,37 @@
+<script>
+    class Animal {
+        constructor(kind, sound) {
+            this.kind = kind;
+            this.sound = sound;
+        }
+
+        hello() {
+            console.log(`${this.sound} i'm a ${this.kind}!`)
+        }
+        static info() {
+            document.write('This is a class to create animals');
+        }
+        get name() {
+            document.write('mys name is igor');
+        }
+        set nickname(nick) {
+            this.nick = nick;
+        }
+    }
+
+    // const dog = new Animal('dog', 'auau');
+    // const cat = new Animal('Cat', 'miau');
+
+
+    class Dog extends Animal {
+        constructor()
+        {
+            super(name);
+        }
+        bark()
+        {
+            console.log(`${this.sound}! I'm a ${this.name}`)
+        }
+    }
+    const dog = new Dog('Jake','auau');
+</script>
