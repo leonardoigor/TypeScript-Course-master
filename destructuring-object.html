@@ -10,12 +10,21 @@
 </head>
 <body>
     <script>
-        let text='loren ipsun dolor sit amet';
-        
-        document.write(text.startsWith('ren',2));
-        document.write(text.endsWith('ame',25));
-        document.write('<br>lol'.repeat(10));
-        document.write(text.includes(''))
-        </script>
+    var data =
+    {
+        name:'igor',
+        surname:'leonardo',
+        social:
+        {
+            facebook:'igorleonar'
+        }
+    }
+    const {name,surname}=data;
+    const {facebook}=data.social;
+    const {facebook:fb}=data.social;
+    console.log(fb)
+    // debugger
+    
+    </script>
 </body>
 </html>

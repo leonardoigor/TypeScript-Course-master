@@ -10,12 +10,12 @@
 </head>
 <body>
     <script>
-        let text='loren ipsun dolor sit amet';
-        
-        document.write(text.startsWith('ren',2));
-        document.write(text.endsWith('ame',25));
-        document.write('<br>lol'.repeat(10));
-        document.write(text.includes(''))
-        </script>
+    function multiply(mult,...args)
+    {
+        return args.map(arg=>mult*arg);
+    }
+    
+    console.log(multiply(2,2,5,5))
+    </script>
 </body>
 </html>

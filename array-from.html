@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <ul id="list">
+        <li>igor</li>
+        <li>leonardo</li>
+        <li>mendonca</li>
+    </ul>
+    <script>
+        // const text ='igor';
+        // console.log(Array.from(text));
+       const list = document.querySelectorAll("#list li");
+       const listarray=Array.from(list);
+       console.log(listarray);
+
+       const name = listarray.map((name)=>name.textContent);
+       console.log(name);
+    </script>
+</body>
+</html>

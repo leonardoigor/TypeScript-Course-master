@@ -10,12 +10,14 @@
 </head>
 <body>
     <script>
-        let text='loren ipsun dolor sit amet';
-        
-        document.write(text.startsWith('ren',2));
-        document.write(text.endsWith('ame',25));
-        document.write('<br>lol'.repeat(10));
-        document.write(text.includes(''))
-        </script>
+        function makeSandwich(bread='bread',cheese='cheese',sauce='sauce')
+        {
+            var done=`Your sandwich with ${bread} bread, ${cheese} and ${sauce} is done!`;
+            document.write(done);
+            console.log(done);
+        }
+        const ingredientes=['white','cheddar','barbecue'];
+        makeSandwich(...ingredientes);
+    </script>
 </body>
 </html>
