@@ -20,7 +20,7 @@
         
         function* ajaxGen() {
             console.log('Buscando posts...');
-           const posts= yield ajax('promises-exemple.json');
+           const posts= yield ajax('https://github.com/leonardoigor/TypeScript-Course-master/blob/master/promises-exemple.json');
            console.log(posts);
             console.log('Buscando posts1...');
             const git=  yield ajax('promises-exemple.json');
@@ -39,6 +39,7 @@
             console.log(gits);
         }
         const dados =ajaxGen();
+       dados.next();
        dados.next();
     </script>
 </body>
